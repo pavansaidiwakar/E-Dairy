@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="styles.css" rel="stylesheet">
+<title>eDairy::HOME PAGE</title>
+
+
+</head>
+	<body  onscroll="myFunction()">
+<header style="background-color:#660000">
+   <h1>DAIRY PRODUCT MANAGEMENT SYSTEM</h1>
+    <br>
+   <h3>Admin VIEW</h3>
+</header>
+
+<div class="navbar" id="myTopnav" style="background-color:#333333">
+  <a href="admin_afterlogin.jsp?check=0">Home</a>
+  
+  
+</div>
+<br><br>
+<form action="delete_staff.jsp" method="get">
+  
+
+  <div class="container" style="width:250px; margin:0 auto;"  >
+    
+    <span style="text-align:center"><h1>DELETE THE STAFF</h1><span>
+   
+    
+    <input type="number" min="1" max="200" placeholder="Staff_Id" name="staff_id" required>
+    
+   
+        
+    <button type="submit">DELETE THE STAFF</button>
+    
+  </div>
+
+</form>
+	<script>
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>

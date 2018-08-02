@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="styles.css" rel="stylesheet">
+<title>eDairy::HOME PAGE</title>
+
+
+</head>
+	<body  onscroll="myFunction()">
+<header style="background-color:#660000" >
+   <h1>DAIRY PRODUCT MANAGEMENT SYSTEM</h1>
+    <br>
+   <h3>Admin VIEW</h3>
+</header>
+
+<div class="navbar" id="myTopnav" style="background-color:#333333">
+  <a href="admin_afterlogin.jsp?check=0">Home</a>
+  
+  
+  
+</div>
+<br><br>
+<form action="addproduct1.jsp" method="get">
+  
+
+  <div class="container" style="width:250px; margin:0 auto;"  >
+    
+    <span style="text-align:center"><h1>INSERT a PRODUCT</h1><span>
+   
+    <input type="text" placeholder="Product ID" name="pid" required>
+    <input type="text" placeholder="Name" name="name" required>
+    <select name="type" placeholder="type" required>
+     <option value="-------">--TYPE--</option>
+  <option value="Butter and Ghee">Butter and Ghee</option>
+  <option value="Milk">Milk</option>
+  <option value="Fermented Products">Fermented Products</option>
+  <option value="Sweets">Sweets</option>
+  <option value="Icecreams">Icecreams</option>
+  <option value="Chocolate">Chocolate</option>
+  <option value="Cookies">Cookies</option>
+  <option value="Other Products">Other Products</option>
+  
+</select>
+    <input type="number" min="3" max="365" placeholder="Shelf Time" name="shelf_life" required>
+    <div>
+    	<h3>variant1</h3>
+    	<select name="variant"  required>
+     <option value="-------">--Variant--</option>
+  <option value="250">250 ml/g</option>
+  <option value="500">500 ml/g</option>
+  <option value="1000">1000 ml/g</option>
+  
+  
+</select>
+<input type="number" min="10" max="500" placeholder="Price" name="price" required>
+   
+   </div> 
+   <div>
+    	<h3>variant2</h3>
+    	<select name="variant1"  required>
+     <option value="-------">--Variant--</option>
+  <option value="250">250 ml/g</option>
+  <option value="500">500 ml/g</option>
+  <option value="1000">1000 ml/g</option>
+  
+  
+</select>
+<input type="number" min="10" max="500" placeholder="Price" name="price1" required>
+   
+   </div> 
+     
+    <button type="submit">ADD THE PRODUCT</button>
+    
+  </div>
+
+</form>
+
+
+
+	<script>
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>

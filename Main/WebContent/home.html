@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="styles.css" rel="stylesheet">
+<title>HOME PAGE</title>
+
+
+</head>
+	<body  onscroll="myFunction()">
+<header>
+   <marquee scrollamount="10"><h1>DAIRY PRODUCT MANAGEMENT SYSTEM</h1></marquee>	
+</header>
+
+<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <a href="about_us.html">About us</a>
+  <a href="account.html">My Account</a>
+  <div class="dropdown">
+    <button class="dropbtn"> Products 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Butter And Ghee</a>
+      <a href="#">Milk</a>
+      <a href="#">Fermented Products</a>
+      <a href="#">Sweets</a>
+      <a href="#">Ice-Creams</a>
+      <a href="#">Choclate</a>
+      <a href="#">Cookies1</a>
+      <a href="#">Milk Products</a>
+      <a href="#">Other Products</a>
+    </div>
+  </div>
+</div>
+
+
+	</div>
+	<form action="login.jsp">
+  
+
+  <div class="container" style="width:250px; margin:0 auto;"  >
+  	
+  	<span style="text-align:center"><h1>LOGIN</h1><span>
+    <input type="email" placeholder="Registered E-Mail" name="email" required>
+
+    
+    <input type="password" placeholder="Password" name="pwd" required>
+        
+    <button type="submit">Login</button>
+    <a href="register.html"><h3>NOT YET REGISTERED! SIGN UP NOW</h3></a>
+  </div>
+
+</form>
+	<script>
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<footer>MADE BY PAVAN AND NITHIN</footer>
+</body>
+</html>
